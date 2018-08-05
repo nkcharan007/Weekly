@@ -39,7 +39,7 @@ void main() {
 
   clrscr();
 
-	 printf("\n Enter the values of Mangoes:");
+	 printf("\n Enter the values of Oranges:");
 
 
 	    scanf("%d %d %d", &k, &n, &w);		// Scans the values
