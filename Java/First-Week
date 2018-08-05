@@ -2,7 +2,7 @@ package com.codechallenge;
 
 import java.util.Scanner;
 
-public class MaxResult {
+public class firstchallenge {
 	
 	public static void main(String[] args) {
 		
