@@ -1,0 +1,27 @@
+package com.codechallenge;
+
+import java.util.Scanner;
+
+public class thirdchallenge {
+
+	public static void main(String[] args) {
+		
+		Scanner s= new Scanner(System.in);
+		
+		System.out.print("Enter the values of Mangoes\n");
+		
+		int k  = s.nextInt();
+		
+		int n = s.nextInt();
+		
+		int w = s.nextInt();
+		
+		int total;
+		
+		
+		total = k * w * (w + 1) / 2;
+		
+		System.out.println("The borowed Amount is " + (total-n));
+	}
+
+}
