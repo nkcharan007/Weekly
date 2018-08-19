@@ -1,0 +1,120 @@
+/**
+
+// @Kuppam Engineering College 
+
+// @KEC Coding Club
+
+*/
+
+/*
+
+//Fourth Week Challenge.
+
+*/
+
+/**
+ * @Authors {
+
+ N.K.CHARAN , M.AYATHULLAH 
+
+};
+
+ * Team_Name: #Riots-18
+
+*/
+#include<stdio.h>
+
+#include<conio.h>
+
+#include<string.h>
+
+int pos(char* str, char c) {                   // For Finding the posistion in KeyWords
+
+	int p = -1;
+
+	int j;
+
+	for (j=0;j<strlen(str);j++) {        // For Finding the Length of the String
+
+		if(str[j]==c) {
+
+		p=j;
+			break;
+		}
+	}
+	return p;
+}
+
+int cpos(char* str, char c) {
+
+	int p = -1;
+
+	int j;
+
+	for (j=0;j<strlen(str);j++) {        // For Finding the Length of the String
+
+
+		if(str[j]==(32+c)) {        // Here it is used ASCII code 
+
+		p=j;
+			break;
+		}
+	}
+	return p;
+}
+
+void main()    {
+
+	int i;
+
+	char a[100];
+
+	char b[100];
+
+	char c[100];
+
+
+clrscr();
+
+	printf("\n Enter the 1st Strings:");
+
+	   scanf("%s",&a);
+
+	        printf("\n Enter the 2nd Strings:");
+
+	             scanf("%s",&b);
+
+	                printf("\n Enter the 3rd Strings:");
+
+	                     scanf("%s",&c);
+
+printf("\n");
+	
+    for ( i=0;i<strlen(c);i++) {
+
+	char d = c[i];
+
+	    int e = pos(a, c[i]);
+
+		if(e==-1) {
+
+			int f = cpos(a, c[i]);
+
+			if(f==-1) {
+
+			printf("%c", c[i]);
+
+	} else {
+
+		printf("%c", b[f]-32);
+	}
+
+} else {
+
+	printf("%c", b[e]);
+
+	}
+}
+getch();
+
+}
