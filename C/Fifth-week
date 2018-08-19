@@ -1,0 +1,64 @@
+/**
+
+// @Kuppam Engineering College 
+
+// @KEC Coding Club
+
+*/
+
+/*
+
+//Fifth Week Challenge.
+
+*/
+
+/**
+ * @Authors {
+
+ N.K.CHARAN , M.AYATHULLAH 
+
+};
+
+ * Team_Name: #Riots-18
+
+*/
+
+
+#include<stdio.h>
+
+#include<conio.h>
+
+void main() {
+
+long long n;
+
+int count=0;
+
+clrscr();
+
+printf("\n Enter the number:");
+
+scanf("%lu",&n);
+
+while (n != 0) {
+
+if (n % 10 == 4 || n % 10 == 7)  {
+
+       count++;
+ }
+
+   n /= 10;
+
+}
+if (count == 4 || count == 7)  {
+
+     printf("\n Yes");
+
+} else {
+
+printf("\n No");
+
+}
+getch();
+
+}
